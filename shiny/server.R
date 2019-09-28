@@ -20,8 +20,8 @@ server <- function(input, output, session) {
         diffPrint(
           as.data.frame(ogLyrics[[idx()]]$line), as.data.frame(kbLyrics[[idx()]]$result$line),
           mode = "sidebyside",
-          format = "html"#,
-          #style = list(html.output = "diff.w.style")
+          format = "html", 
+          style = list(html.output = "page") #diff.w.style
         )
       )
     )

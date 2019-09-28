@@ -8,7 +8,7 @@ ui <- fluidPage(
       wellPanel(
         hr("Pick a song"),
         selectInput("songChoice", "Original Song", kb$song_name,
-          selected = NULL, multiple = FALSE,
+          selected = "Truth Hurts", multiple = FALSE,
           selectize = TRUE, width = NULL, size = NULL
         )
       )
